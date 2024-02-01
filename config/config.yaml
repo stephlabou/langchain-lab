@@ -1,0 +1,5 @@
+HUGGINGFACEHUB_API_TOKEN: "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"
+emb_model_name: "sentence-transformers/all-MiniLM-l6-v2"
+llm_repo_id: "HuggingFaceH4/zephyr-7b-beta"
+llm_task: "text-generation"
+response_max_length: 1000

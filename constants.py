@@ -1,0 +1,1 @@
+configYamlPath = "./config/config.yaml"
