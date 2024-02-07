@@ -1,0 +1,17 @@
+.container {
+    padding-top: 50px;
+}
+
+#enter-box {
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#response {
+    color: darkgreen;
+}
+
+#customCheck1 {
+    margin-bottom: 10px;
+}

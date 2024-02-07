@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Search App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h2>Ask Me Anything</h2>
+    <p>Ask a question about the Library's GIS page</p>
+    <form action="{{url_for('generate_response')}}" method="post">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">I want to enter a custom webpath</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="webpathInput" class="form-control" name="custom_webpath" value="https://ucsd.libguides.com/gis/gisdata" readonly>
+            <input type="text" id="enter-box" class="form-control" name="question" placeholder="Enter question" required="required">
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Response</button>
+    </form>
+
+    <br>
+
+    <p id="response">
+        <b>{{output}}</b>
+    </p>
+    </div>
+
+    <script type="module">
+        $(document).ready(function() {
+            $('#customCheck1').on('change', function(){
+                if($('#customCheck1').prop('checked')) {
+                    $('#webpathInput').prop('readonly', false);
+                }
+                else {
+                    $('#webpathInput').prop('readonly', true);
+                }
+            })
+            
+        });
+        
+    </script>
+        
+    
+</body>
+</html>
