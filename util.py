@@ -45,7 +45,7 @@ class RAG():
                                 )
         self.called = True
     
-    def clear():
+    def clear(self):
         self.prompt = None
         self.docs = None
         self.split_docs = None
