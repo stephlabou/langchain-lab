@@ -2,4 +2,4 @@
 .ipynb_checkpoints
 /__pycache__
 .venv
-config
+config/config.yaml
