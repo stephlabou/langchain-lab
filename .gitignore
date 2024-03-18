@@ -1,5 +1,6 @@
 # Jupyter Checkpoints
-.ipynb_checkpoints
-/__pycache__
-.venv
+.ipynb_checkpoints/
+/__pycache__/
+.venv/
+config/config.yaml
 config/config.yaml
