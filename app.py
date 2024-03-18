@@ -4,6 +4,7 @@ from util import load_config, RAG
 import os
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD']=True
 
 @app.route("/")
 def hello():

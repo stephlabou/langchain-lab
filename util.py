@@ -106,7 +106,8 @@ class RAG():
         Use the following pieces of retrieved context to answer the question. \
         If you don't know the answer, just say that you don't know, don't try to make up an answer. \
         Use three sentences maximum and keep the answer as concise as possible. \
-        Check the context and the question, if you think that the context is not relevant, just say politely that you don't know, don't try to make up an answer.
+        Check the context and the question, if you think that the context is not relevant, 
+        just say politely that you don't know, don't try to make up an answer.
         Always say "thanks for asking!" at the end of the answer. \
 
         {context}
